@@ -1,4 +1,3 @@
-type LatLngTuple = [number, number];
 'use client';
 
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
