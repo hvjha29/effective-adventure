@@ -4,69 +4,57 @@ import TripTemplate from '@/app/components/TripTemplate';
 
 export default function EuropeTrip() {
   const tips = [
-    'Best Time to Visit: May-September for pleasant weather and longer daylight hours',
-    'Transportation: Get a Swiss Travel Pass if visiting multiple Swiss cities and mountains',
-    'Mountain Access: Book cable cars and funiculars in advance during peak season to avoid queues',
-    'Walking Shoes: Essential for hiking, trekking, and exploring villages on foot',
-    'Currency: Switzerland uses Swiss Francs (CHF), while France uses Euros (EUR)',
-    'Accommodation: Book mountain lodges and city hotels early, especially in popular towns like Interlaken and Lucerne',
-    'Waterfalls & Gorges: Visit Trummelbach and Rosenlaui early morning for fewer crowds and better photos',
-    'Dining: Try local specialties - fondue in Switzerland, croissants and pastries in Paris',
-    'Museums: Many offer free or discounted entry during specific hours',
-    'Weather: Mountain weather changes rapidly - bring layers and rain gear',
+    'Starting Points: You can begin from Interlaken West, Interlaken Ost, Brienz, Spiez, or Thun - or stay in Lauterbrunnen valley',
+    'Best Trains: Take the Interlaken–Luzern Express from Brienz for stunning glass-window views; from Interlaken Ost to Lauterbrunnen use the comfortable blue train',
+    'Timing: Start early to avoid crowds, especially at Mürren and Gimmelwald. Trümmelbach Falls is more enjoyable when less crowded',
+    'Packing: Bring comfortable walking shoes, snacks from the well-stocked Coop in Mürren, and layers - it gets cooler as you ascend',
+    'Gimmelwald Highlights: Don\'t miss the Honesty Shop, local beer, famous Swiss milk, and ice cream. Respect the "Don\'t step on the grass - it\'s our food" signs',
+    'Weather: Check forecasts before your trip - perfect weather dramatically enhances the alpine experience',
+    'Transport Infrastructure: Swiss trains and gondolas are highly reliable and well-maintained; buy a Swiss Travel Pass for unlimited travel',
+    'Photography: The views are postcard-perfect - especially the walk to Gimmelwald and the three peaks views from Mürren',
   ];
 
   const itinerary = [
     {
-      day: 'Day 1: Milan - Art, Architecture & History',
+      day: 'Day 1: Arrival & Interlaken to Lauterbrunnen',
       description:
-        'Arrive in Milan and explore one of Italy\'s most vibrant cities. Visit the iconic Duomo di Milano cathedral with its stunning Gothic architecture. Discover the Galleria Vittorio Emanuele II, an impressive shopping arcade. Pay respects at the Cimitero Monumentale, one of Europe\'s most impressive cemeteries. See Leonardo da Vinci\'s statue and the historic opera house (La Scala) from the outside. Don\'t miss the ossuary (bone church) - a unique historical site showcasing Milan\'s rich past.',
+        'Arrive at your starting point (Interlaken West, Interlaken Ost, Brienz, Spiez, or Thun). If starting from Brienz, take the scenic Interlaken–Luzern Express with its spectacular glass windows. Make your way to Interlaken Ost, then board the comfortable blue train to Lauterbrunnen (quick, scenic ride with reasonably large windows). Arrive in Lauterbrunnen valley and settle into your accommodation. Take an evening stroll through Lauterbrunnen town and soak in the alpine atmosphere with views of Staubbach Falls and nearby waterfalls.',
     },
     {
-      day: 'Day 2: Brienz & Interlaken - Swiss Lakes & Waterfalls',
+      day: 'Day 2: Lauterbrunnen to Mürren via Gimmelwald',
       description:
-        'Travel to Brienz in the Swiss Alps. Take a scenic ferry from Brienz to Interlaken across pristine alpine lakes. Ride the funicular to witness the breathtaking Giessbach Waterfall. Explore the charming town of Interlaken nestled between two lakes. Visit St. Beatus Caves, spectacular stalactite and stalagmite formations hidden in the mountain. Immerse yourself in the stunning natural beauty of the Bernese Oberland region.',
+        'Early start: Take the gondola from Lauterbrunnen (arrives at regular intervals, large enough for cattle - beautiful views). Board the modern train to Mürren (get off at the second stop). Explore the picture-perfect alpine village of Mürren. Grab coffee or snacks from the well-stocked Coop. Hike down to Gimmelwald through insanely beautiful alpine scenery - watch for the sudden stairs dropping left to the village. Spend time in charming Gimmelwald: visit the Honesty Shop, try local beer and famous Swiss ice cream, and admire the pastoral landscape. Return to Lauterbrunnen via gondola from Gimmelwald.',
     },
     {
-      day: 'Day 3: Mürren & Lauterbrunnen Valley - Alpine Adventures',
+      day: 'Day 3: Lauterbrunnen Valley & Trümmelbach Falls',
       description:
-        'Take the iconic cogwheel train to Mürren, a car-free village perched on a mountainside in the Jungfrau region. Trek down through Alpine meadows to the charming village of Gimmelwald. Ride the gondola down to Lauterbrunnen valley. Visit the magnificent Trummelbach Falls, a series of 10 waterfalls within the mountain. Explore the picturesque Lauterbrunnen Valley and venture to the historic town of Thun with its medieval castle and lakeside charm.',
+        'Travel to the Stechelberg stop in Lauterbrunnen valley (4-minute bus ride from main valley). Visit the spectacular Trümmelbach Falls - the only glacier waterfall accessible from inside. Spend 1-2 hours exploring the dramatic limestone formations and roaring waterfalls. Enjoy the unbelievably green grass surroundings and the charming flower-covered restaurant near the entrance. Return to Lauterbrunnen town by bus or pleasant walk. See the visible Staubbach Falls and explore climbing behind one of the nearby waterfalls for a unique experience. Evening: Relax and reflect on the valley\'s serene beauty.',
     },
     {
-      day: 'Day 4: Lucerne - Mountains, Museums & Monuments',
+      day: 'Day 4: Schilthorn & Alpine Heights',
       description:
-        'Relocate to Lucerne, a stunning lakeside city. Experience Stanserhorn mountain via funicular and the world\'s first open-air rotating gondola for panoramic views. Stroll through Lucerne\'s old town and walk across the iconic Chapel Bridge (Kapellbrücke), one of Europe\'s oldest covered bridges. Pay homage at the Lion Monument, a moving tribute to Swiss guards. Visit the Picasso Museum to admire works by the legendary artist.',
+        'From Mürren, head up to Schilthorn via two gondolas, taking in activities and views at each stop. Enjoy spectacular 360-degree alpine views and photograph the majestic three peaks. Spend 1-2 hours at the summit (it\'s incredible but you won\'t need much longer). Return to Mürren for dinner with mountain views. Optional: Stop at mid-stations on the way down to explore further or watch sunset over the peaks. Evening: Rest and enjoy the quiet mountain atmosphere.',
     },
     {
-      day: 'Day 5: Rosenlaui, Meiringen & Berne - Glaciers & Capital',
+      day: 'Day 5: Interlaken & Optional Excursions',
       description:
-        'Journey to the stunning Rosenlaui Valley and explore the UNESCO-protected Rosenlaui Glacier Gorge with its dramatic ice formations. Visit Meiringen, home to the fascinating Sherlock Holmes Museum dedicated to Arthur Conan Doyle\'s famous detective. Travel to Switzerland\'s capital, Berne, and tour the impressive Swiss Parliament building. Watch the sunset at Rosengarten (Rose Garden) overlooking the city. Visit the enchanting Bear Park where bears roam in their natural habitat.',
+        'Return to Interlaken Ost from Lauterbrunnen. Choose from multiple options: (1) Take a ferry to St. Beatus Caves - stays open late with excellent views and a nice restaurant for dinner, perfect way to end the day. (2) Take a ferry to Giessbach Falls for scenic beauty and exploration. (3) Explore Interlaken town: visit the parks, enjoy local shops, and prepare for departure. Spend time reflecting on the breathtaking alpine journey.',
     },
     {
-      day: 'Day 6: Rhine Falls & Zurich - Waterfalls & Culture',
+      day: 'Day 6: Departure or Extended Exploration',
       description:
-        'Witness the majestic Rhine Falls, Europe\'s largest waterfall, with its thundering cascade. Travel to Zurich and explore the FIFA Museum, a must-visit for football enthusiasts. Enjoy shopping and discover the vibrant culture of Switzerland\'s largest city. Stroll along the Limmat River and explore historic Old Town (Altstadt) with its charming streets and Zurich Cathedral.',
-    },
-    {
-      day: 'Day 7: Mount Titlis, Lake Lucerne & Journey to Paris',
-      description:
-        'Ascend Mount Titlis, standing at 3,238 meters, one of the most accessible high Alpine peaks. Experience the world\'s first rotating aerial cableway for 360-degree views. Take a scenic cruise on Lake Lucerne (Vierwaldstättersee) surrounded by mountain peaks. Begin your journey to Paris via Basel and Strasbourg, traveling through the picturesque Alsace region with its fairy-tale towns.',
-    },
-    {
-      day: 'Day 8: Paris - The City of Light',
-      description:
-        'Arrive in Paris and immerse yourself in European culture. Visit the magnificent Notre-Dame Cathedral, an architectural masterpiece (note: currently under restoration). Stroll through the Jardin du Luxembourg, one of Paris\'s most beloved parks, perfect for people-watching. Explore the Tuileries Garden with its classical beauty. View iconic landmarks from outside: the Louvre Museum, Musée d\'Orsay (home to Impressionist art), and Seine River cruises. Visit the Monnaie de Paris (Mint Museum) exploring French numismatic history. Promenade down the famous Champs-Élysées for high-end shopping. End your journey at the stunning Eiffel Tower, the symbol of Paris, especially magical at sunset or when lit up at night.',
+        'Final morning in the Swiss Alps. Option 1: Depart for your next destination (airport or onward travel). Option 2: Take a morning ferry to whichever site you didn\'t visit on Day 5 - St. Beatus Caves or Giessbach Falls. Option 3: Revisit your favorite location from the itinerary. Enjoy a final Swiss breakfast or lunch before departing. Reflect on the rare balance of comfort, beauty, and serenity that made this journey unforgettable.',
     },
   ];
 
   return (
     <TripTemplate
-      title="Europe"
-      location="Milan, Brienz, Interlaken, Lucerne, Berne, Zurich, Paris"
-      days="8 Days"
-      bestTime="May-September"
-      bannerImage="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&h=400&fit=crop"
-      summary="An unforgettable 8-day journey through the heart of Europe, combining the artistic treasures of Milan with the breathtaking Alpine landscapes of Switzerland and the timeless elegance of Paris. Experience iconic landmarks, stunning natural wonders, and charming villages while discovering the rich culture and heritage of these European destinations."
+      title="Europe - Swiss Alps Adventure"
+      location="Interlaken, Lauterbrunnen, Mürren, Gimmelwald, Schilthorn"
+      days="6 Days"
+      bestTime="May-September for best weather and accessibility"
+      bannerImage="https://images.unsplash.com/photo-1531366936337-7793a028316d?w=1200&h=400&fit=crop"
+      summary="Experience the soothing majesty of the Swiss Alps across 6 unforgettable days. This carefully curated itinerary balances comfort, adventure, and breathtaking natural beauty. Journey through Lauterbrunnen valley, hike to the charming village of Gimmelwald, witness the dramatic Trümmelbach Falls, and ascend to the heights of Schilthorn. Every stop offers multiple options tailored to your mood and energy level, while the world-class Swiss transport infrastructure keeps you safe and on schedule. Discover why this route offers a rare blend of serenity, majesty, and stunning alpine scenery."
       itinerary={itinerary}
       tips={tips}
     />
