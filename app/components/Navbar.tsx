@@ -19,6 +19,7 @@ export default function Navbar() {
       <Link href="/photos">Photos</Link>
       <Link href="/map">Map</Link>
       <Link href="/trips">Trips</Link>
+      <Link href="/history">History</Link>
     </nav>
   );
 }

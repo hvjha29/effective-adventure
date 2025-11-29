@@ -14,6 +14,8 @@ export default function TripsPage() {
           <li><Link href="/trips/london">London – 4 Day City Essentials</Link></li>
           <li><Link href="/trips/seoul">Seoul & Gyeongju – 4 Day Essentials</Link></li>
           <li><Link href="/trips/istanbul">Istanbul</Link></li>
+          <li><Link href="/trips/greece">Greece – 10 Days</Link></li>
+          <li><Link href="/trips/scotland">Scotland – 7 Days</Link></li>
         </li>
       </ul>
     </main>

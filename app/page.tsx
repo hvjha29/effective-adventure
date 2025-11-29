@@ -1,6 +1,16 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <main className="content-wrapper">
+      <Image
+        src="/images/home-banner.jpeg"
+        alt="Travel Banner"
+        width={1200}
+        height={400}
+        style={{ borderRadius: "12px", marginBottom: "30px" }}
+      />
+
       <h1>Alisha's Travel Adventures</h1>
 
       <p>

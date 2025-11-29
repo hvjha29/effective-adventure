@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 
 export const metadata = {
   title: "Effective Adventure",
-  description: "Harshvardhan's travel adventures",
+  description: "Alisha's travel adventures",
 };
 
 export default function RootLayout({
