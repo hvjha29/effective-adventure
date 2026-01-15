@@ -1,46 +1,31 @@
-/* Global background */
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Merriweather", serif;
+  --font-body: "Inter", sans-serif;
+
+  --color-primary: #2d6a4f; /* Forest Green */
+  --color-primary-light: #52b788;
+  --color-secondary: #1b4332; /* Deep Green */
+  --color-accent: #d8f3dc; /* Pale green/white */
+  --color-sand: #fefae0; /* Cream/Sand background */
+  --color-ocean: #457b9d; /* Muted Blue */
+  
+  --animate-float: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
 body {
-  background-color: #f7f7f7;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  color: #333;
+  background-color: var(--color-sand);
+  color: #1f2937;
+  font-family: var(--font-body);
 }
 
-/* Headings */
-h1, h2, h3 {
-  font-weight: 600;
-  color: #222;
-}
-
-/* Paragraphs */
-p {
-  line-height: 1.7;
-  font-size: 1.1rem;
-}
-
-/* Lists */
-ul {
-  padding-left: 20px;
-  line-height: 1.7;
-}
-
-/* Links */
-a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Nice container class you can use everywhere */
-.content-wrapper {
-  background: white;
-  padding: 40px;
-  border-radius: 12px;
-  max-width: 800px;
-  margin: 40px auto;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
 }
