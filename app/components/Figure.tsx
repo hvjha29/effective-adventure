@@ -13,12 +13,12 @@ export default function Figure({
   caption?: string;
   align?: 'left' | 'right' | 'center';
 }) {
-  const floatStyle =
+  const floatStyle: React.CSSProperties =
     align === 'right'
-      ? { float: 'right', margin: '0 0 1rem 1rem' }
+      ? { float: 'right' as const, margin: '0 0 1rem 1rem' }
       : align === 'left'
-      ? { float: 'left', margin: '0 1rem 1rem 0' }
-      : { display: 'block', margin: '0 auto 1rem auto' };
+        ? { float: 'left' as const, margin: '0 1rem 1rem 0' }
+        : { display: 'block', margin: '0 auto 1rem auto' };
 
   return (
     <figure style={{ margin: '0 0 1.25rem 0', overflow: 'auto' }}>
