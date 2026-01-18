@@ -24,7 +24,8 @@ export default function IstanbulTrip() {
         - Ended at Mecrada for drag shows at 11 PM & 2 AM
 
         Day 1 was foodie heaven + nightlife chaos. Perfect start.
-      `
+      `,
+      mapRef: 0
     },
     {
       day: "Day 2 — Eminönü Trail + Karaköy Heritage + Segway Night Ride",
@@ -45,7 +46,8 @@ export default function IstanbulTrip() {
         - Night Segway Tour (₹3229)
 
         Peak productivity + peak fun.
-      `
+      `,
+      mapRef: 2
     },
     {
       day: "Day 3 — Old City Cultural Redemption",
@@ -60,7 +62,8 @@ export default function IstanbulTrip() {
         - Dinner at Garden 1897
 
         Lots of history. Lots of beauty. Lots of walking.
-      `
+      `,
+      mapRef: 4
     },
     {
       day: "Day 4 — Chill Asian-Side Day",
@@ -74,7 +77,8 @@ export default function IstanbulTrip() {
         - Üsküdar + Moda Beach for sunset
 
         Perfect final day vibes.
-      `
+      `,
+      mapRef: 0
     }
   ];
 
@@ -87,6 +91,16 @@ export default function IstanbulTrip() {
     "Always hydrate between coffees and drinks (yes, this is important)."
   ];
 
+  const mapCenter: [number, number] = [41.0082, 28.9784]; // Istanbul
+  const mapMarkers = [
+    { pos: [40.9902, 29.0281] as [number, number], label: "Çiya Sofrası" },
+    { pos: [41.0164, 28.9709] as [number, number], label: "Spice Bazaar" },
+    { pos: [41.0256, 28.9742] as [number, number], label: "Galata Tower" },
+    { pos: [41.0310, 28.9766] as [number, number], label: "Pera Palace" },
+    { pos: [41.0115, 28.9834] as [number, number], label: "Topkapı Palace" },
+    { pos: [41.0054, 28.9768] as [number, number], label: "Blue Mosque" },
+  ];
+
   return (
     <TripTemplate
       title="Istanbul — V's Bachelorette"
@@ -97,6 +111,8 @@ export default function IstanbulTrip() {
       summary={summary}
       itinerary={itinerary}
       tips={tips}
+      mapCenter={mapCenter}
+      mapMarkers={mapMarkers}
     />
   );
 }

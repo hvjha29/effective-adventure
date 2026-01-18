@@ -19,22 +19,34 @@ export default function LondonTrip() {
       day: 'Day 1: Arrival & Westminster + Southbank',
       description:
         'Arrive in London and settle into your accommodation. Start with a walk around Westminster: view the Houses of Parliament, Big Ben, and Westminster Abbey (consider a guided tour). Cross to the Southbank for riverside strolls, the London Eye (optional ride), and street performers. Visit Tate Modern or the National Theatre depending on your interests. Finish the evening with dinner on the Southbank or in Covent Garden and enjoy the lively West End atmosphere.',
+      mapRef: 0,
     },
     {
       day: 'Day 2: Museums & Kensington',
       description:
         'Spend the morning in South Kensington visiting the Natural History Museum or the V&A (both offer free entry). Walk through Kensington Gardens and see the Kensington Palace exterior. Head to the British Museum in Bloomsbury in the afternoon if time permits, or explore the shops and cafés around Knightsbridge. Evening: catch a West End show (book in advance) or dine in Soho.',
+      mapRef: 2,
     },
     {
       day: 'Day 3: Tower of London, Tower Bridge & Shoreditch',
       description:
         'Start early at the Tower of London to see the Crown Jewels and learn the site\'s history. Walk across Tower Bridge and explore the riverside near London Bridge. Have lunch at Borough Market for an excellent selection of street food. In the afternoon, head to Shoreditch to see street art, independent shops, and vibrant bars. Optional: visit the Sky Garden or The Shard for panoramic city views (prebook required).',
+      mapRef: 1,
     },
     {
       day: 'Day 4: Markets, Greenwich or Windsor & Departure',
       description:
         'Choose between a relaxed final day in London or a short excursion: Option A — Explore Camden Market then stroll Regent\'s Canal toward Little Venice; Option B — Take the DLR to Greenwich to visit the Cutty Sark, Royal Observatory (Prime Meridian), and Greenwich Market; Option C — Day trip to Windsor to visit Windsor Castle (short train ride). Finish with final shopping or a leisurely pub lunch before departing.',
+      mapRef: 3,
     },
+  ];
+
+  const mapCenter: [number, number] = [51.5074, -0.1278]; // London
+  const mapMarkers = [
+    { pos: [51.5033, -0.1197] as [number, number], label: "South Bank" },
+    { pos: [51.5081, -0.0759] as [number, number], label: "Tower of London" },
+    { pos: [51.5194, -0.1270] as [number, number], label: "British Museum" },
+    { pos: [51.5416, -0.1450] as [number, number], label: "Camden Market" },
   ];
 
   return (
@@ -47,6 +59,8 @@ export default function LondonTrip() {
       summary="Experience London\'s best in four days: historic landmarks, world-class museums, bustling markets, and modern neighborhoods. This compact itinerary balances iconic sights with local flavors and leaves room for optional excursions to Greenwich or Windsor. Perfect for first-time visitors who want a curated, walkable taste of the city."
       itinerary={itinerary}
       tips={tips}
+      mapCenter={mapCenter}
+      mapMarkers={mapMarkers}
     />
   );
 }

@@ -124,6 +124,62 @@ export default function Home() {
             <div className="bg-background-light dark:bg-background-dark p-6 sm:p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col sm:flex-row sm:items-center justify-between gap-6">
               <div className="flex items-center space-x-6">
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <span className="material-icons-outlined text-primary text-3xl">landscape</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-display font-semibold mb-1">Swiss Alps — Alpine Serenity</h3>
+                  <p className="text-stone-500 text-sm">6 Days • May–Sept • Nature</p>
+                </div>
+              </div>
+              <a className="px-6 py-2.5 border-2 border-primary text-primary font-medium rounded-full hover:bg-primary hover:text-white transition-all text-center" href="/trips/europe">
+                View Details
+              </a>
+            </div>
+            <div className="bg-background-light dark:bg-background-dark p-6 sm:p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+              <div className="flex items-center space-x-6">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <span className="material-icons-outlined text-primary text-3xl">fort</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-display font-semibold mb-1">Scotland — Highlands & Skye</h3>
+                  <p className="text-stone-500 text-sm">7 Days • May–Sept • Raw Beauty</p>
+                </div>
+              </div>
+              <a className="px-6 py-2.5 border-2 border-primary text-primary font-medium rounded-full hover:bg-primary hover:text-white transition-all text-center" href="/trips/scotland">
+                View Details
+              </a>
+            </div>
+            <div className="bg-background-light dark:bg-background-dark p-6 sm:p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+              <div className="flex items-center space-x-6">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <span className="material-icons-outlined text-primary text-3xl">museum</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-display font-semibold mb-1">Spain — Cultural Soul</h3>
+                  <p className="text-stone-500 text-sm">10 Days • Apr–Oct • History</p>
+                </div>
+              </div>
+              <a className="px-6 py-2.5 border-2 border-primary text-primary font-medium rounded-full hover:bg-primary hover:text-white transition-all text-center" href="/trips/spain">
+                View Details
+              </a>
+            </div>
+            <div className="bg-background-light dark:bg-background-dark p-6 sm:p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+              <div className="flex items-center space-x-6">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <span className="material-icons-outlined text-primary text-3xl">coffee</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-display font-semibold mb-1">Istanbul — Bosphorus Vibes</h3>
+                  <p className="text-stone-500 text-sm">4 Days • April–June • Fusion</p>
+                </div>
+              </div>
+              <a className="px-6 py-2.5 border-2 border-primary text-primary font-medium rounded-full hover:bg-primary hover:text-white transition-all text-center" href="/trips/istanbul">
+                View Details
+              </a>
+            </div>
+            <div className="bg-background-light dark:bg-background-dark p-6 sm:p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+              <div className="flex items-center space-x-6">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <span className="material-icons-outlined text-primary text-3xl">restaurant</span>
                 </div>
                 <div>
@@ -132,6 +188,20 @@ export default function Home() {
                 </div>
               </div>
               <a className="px-6 py-2.5 border-2 border-primary text-primary font-medium rounded-full hover:bg-primary hover:text-white transition-all text-center" href="/trips/london">
+                View Details
+              </a>
+            </div>
+            <div className="bg-background-light dark:bg-background-dark p-6 sm:p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+              <div className="flex items-center space-x-6">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <span className="material-icons-outlined text-primary text-3xl">beach_access</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-display font-semibold mb-1">Sydney — Coastal Wonders</h3>
+                  <p className="text-stone-500 text-sm">6 Days • Sept–Nov • Scenic</p>
+                </div>
+              </div>
+              <a className="px-6 py-2.5 border-2 border-primary text-primary font-medium rounded-full hover:bg-primary hover:text-white transition-all text-center" href="/trips/sydney">
                 View Details
               </a>
             </div>

@@ -19,22 +19,34 @@ export default function SeoulTrip() {
       day: 'Day 1: Seoul — Historic Core & Insadong',
       description:
         'Arrive in Seoul and check into your accommodation. Begin at Gyeongbokgung Palace for the changing of the guard (arrive early). Walk through the palace grounds and visit the National Folk Museum. Stroll to Bukchon Hanok Village for traditional hanok houses and great photo spots. Head to Insadong for tea houses, artisan shops, and antique stores. Evening: explore nearby Jongno or try a Korean BBQ dinner in the area.',
+      mapRef: 0,
     },
     {
       day: 'Day 2: Modern Seoul — Gangnam, K-pop & Night Views',
       description:
         'Spend the morning in the trendy Gangnam district: COEX Mall and Starfield Library are highlights. Visit Bongeunsa Temple across the street for a calm contrast. Afternoon: explore Garosugil in Sinsa for boutiques and cafés, or visit the Samsung d’light experience. Evening: head to N Seoul Tower on Namsan for panoramic city views and the sunset. Optional: catch a K-pop / musical performance or immerse in Hongdae nightlife.',
+      mapRef: 1,
     },
     {
       day: 'Day 3: Day trip to Gyeongju — Silla Capital Highlights',
       description:
         'Take an early KTX or express train to Gyeongju (approx 2–2.5 hours). Start at Bulguksa Temple (UNESCO World Heritage) and walk the serene grounds. Visit Seokguram Grotto for its famous Buddha statue (check access/timing). Explore Tumuli Park (Daereungwon) to see ancient royal tombs, then walk through Anapji Pond (Donggung Palace site) at sunset for beautiful reflections. Evening: return to Seoul by train or stay overnight in Gyeongju if you prefer a slower pace.',
+      mapRef: 2,
     },
     {
       day: 'Day 4: Markets, Museums & Departure',
       description:
         'Morning options: Visit the War Memorial of Korea or the National Museum of Korea for deep cultural context. Alternatively, wander through Namdaemun or Dongdaemun markets for souvenirs and street food. If time permits, explore Ihwa Mural Village or the Cheonggyecheon Stream for a relaxed stroll. Final lunch at Gwangjang Market to savor bindaetteok (mung bean pancake) and other classics. Head to the airport or next destination with plenty of memories and local flavors.',
+      mapRef: 3,
     },
+  ];
+
+  const mapCenter: [number, number] = [37.5665, 126.9780]; // Seoul
+  const mapMarkers = [
+    { pos: [37.5759, 126.9769] as [number, number], label: "Gyeongbokgung Palace" },
+    { pos: [37.5251, 127.0601] as [number, number], label: "Gangnam" },
+    { pos: [35.8562, 129.2247] as [number, number], label: "Gyeongju" },
+    { pos: [37.5704, 126.9921] as [number, number], label: "Gwangjang Market" },
   ];
 
   return (
@@ -47,6 +59,8 @@ export default function SeoulTrip() {
       summary="Experience South Korea’s dynamic capital and the ancient Silla capital over four days. Blend Seoul’s palaces, modern neighborhoods, and vibrant markets with a focused day trip to Gyeongju’s UNESCO sites. This itinerary balances cultural depth, scenic history, and approachable modern comforts for first-time and repeat visitors alike."
       itinerary={itinerary}
       tips={tips}
+      mapCenter={mapCenter}
+      mapMarkers={mapMarkers}
     />
   );
 }
